@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Header-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container">
         <a href="index.html" class="logo-link"
           ><span class="logo-web">WEB</span
@@ -56,12 +56,21 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="32">
+            <use href="./img/icons.svg#nav-menu-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <!-- Main section -->
     <main>
-      <!-- <section class="hero-section">
+      <section class="hero-section">
         <div class="container">
           <h1 class="hero-text">Effective Solutions<br />for Your Business</h1>
 
@@ -69,7 +78,7 @@
             Order&nbsp;Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Section About us -->
       <section class="section values-section">
@@ -135,6 +144,7 @@
           <ul class="doing-list">
             <li class="list-item">
               <img
+                srcset="./img/monitor.jpg 1x, ./img/monitor@2x.jpg 2x"
                 src="./img/monitor.jpg"
                 alt="imagedesktopapp"
                 width="360"
@@ -143,6 +153,7 @@
             </li>
             <li class="list-item">
               <img
+                srcset="./img/4phone.jpg 1x, ./img/4phone@2x.jpg 2x"
                 src="./img/4phone.jpg"
                 alt="imagemoblieapp"
                 width="360"
@@ -151,6 +162,10 @@
             </li>
             <li class="list-item">
               <img
+                srcset="
+                  ./img/noutbokandphone.jpg    1x,
+                  ./img/noutbokandphone@2x.jpg 2x
+                "
                 src="./img/noutbokandphone.jpg"
                 alt="imagedesktopandmobileapp"
                 width="360"
@@ -167,6 +182,7 @@
           <ul class="our-team-list">
             <li class="list-item">
               <img
+                srcset="./img/mark.jpg 1x, ./img/mark@2x.jpg 2x"
                 src="./img/mark.jpg"
                 alt="Mark's photo"
                 width="264"
@@ -209,6 +225,7 @@
             </li>
             <li class="list-item">
               <img
+                srcset="./img/tom.jpg 1x, ./img/tom@2x.jpg 2x"
                 src="./img/tom.jpg"
                 alt="Tom's photo"
                 width="264"
@@ -251,6 +268,7 @@
             </li>
             <li class="list-item">
               <img
+                srcset="./img/camila.jpg 1x, ./img/camila@2x.jpg 2x"
                 src="./img/camila.jpg"
                 alt="Camila's photo"
                 width="264"
@@ -293,6 +311,7 @@
             </li>
             <li class="list-item">
               <img
+                srcset="./img/deniel.jpg 1x, ./img/den@2x.jpg 2x"
                 src="./img/deniel.jpg"
                 alt="Daniel's photo"
                 width="264"
@@ -454,7 +473,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -524,7 +543,81 @@
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="nav-menu-mobile">
+        <ul class="nav-menu-list-mobile">
+          <li class="list-item-mobile">
+            <a class="navi-link mobile current" href="./index.html">Studio</a>
+          </li>
+          <li class="list-item-mobile">
+            <a class="navi-link mobile" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="list-item-mobile">
+            <a class="navi-link mobile" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="address-menu-mobile">
+        <ul class="address-menu-list-mobile">
+          <li class="list-item-mobile">
+            <a href="tel:+11(000)1111111" class="contnumb-mobile"
+              >+11(000)111-11-11</a
+            >
+          </li>
+          <li class="list-item-mobile">
+            <a href="mailto:info@devstudio.com" class="contmail-mobile"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="sotial-list mobile">
+        <li class="sotial-item">
+          <a href="https://instagram.com" class="sotial-link">
+            <svg class="sotial-icons" width="24" height="24">
+              <use href="./img/icons.svg#icon-instagram-card"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sotial-item">
+          <a href=" twitter.com" class="sotial-link">
+            <svg class="sotial-icons" width="24" height="24">
+              <use href="./img/icons.svg#icon-twitter-card"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sotial-item">
+          <a href="facebook.com" class="sotial-link">
+            <svg class="sotial-icons" width="24" height="24">
+              <use href="./img/icons.svg#icon-facebook-card"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sotial-item">
+          <a href="linkedin.com" class="sotial-link">
+            <svg class="sotial-icons" width="24" height="24">
+              <use href="./img/icons.svg#icon-linkedin-card"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
