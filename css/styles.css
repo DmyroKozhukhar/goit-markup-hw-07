@@ -1313,9 +1313,9 @@ body {
 
 .sotial-list.mobile {
   margin-top: 48px;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: auto;
 }
 
 .address-menu-list-mobile {
