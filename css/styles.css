@@ -468,7 +468,6 @@ body {
 /* OUR-TEAM-SECTION */
 .our-team-list {
   display: flex;
-
   flex-wrap: wrap;
 }
 
@@ -484,6 +483,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .our-team-list {
+    margin-top: 72px;
     row-gap: 64px;
     column-gap: 24px;
   }
@@ -505,6 +505,16 @@ body {
   margin-right: auto;
   margin-top: 72px;
 }
+/* and (max-width: 1199.98px) */
+@media screen and (min-width: 767.98px) {
+  .our-team-list > .list-item {
+    margin: 0;
+  }
+  .our-team-list {
+    justify-content: center;
+  }
+}
+
 /* .our-team-list .list-item + .list-item {
   margin-left: 24px;} */
 
@@ -969,7 +979,7 @@ body {
 }
 .comment {
   font-size: 12px;
-  line-height: 1.33 ;
+  line-height: 1.33;
   max-width: 360px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
