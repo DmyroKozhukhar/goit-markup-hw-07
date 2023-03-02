@@ -95,8 +95,6 @@ img {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
-  /* outline: 2px solid teal;
-  outline-offset: -2px; */
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -104,6 +102,27 @@ img {
     padding-bottom: 120px;
   }
 }
+
+.section.section-our-works {
+  outline: 2px solid teal;
+  outline-offset: -2px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media screen and (min-width: 767.88px) {
+  .section.section-our-works {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1199.88px) {
+  .section.section-our-works {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+}
+
 p {
   color: var(--p-contact-color);
 }
