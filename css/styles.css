@@ -280,8 +280,8 @@ body {
 .hero-section {
   background-color: var(--hero-background-color);
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -331,6 +331,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
+    padding-bottom: 188 px;
+    padding-top: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -578,6 +580,7 @@ body {
 
 .h3-studio {
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 8px;
@@ -965,6 +968,8 @@ body {
   line-height: 1.16;
 }
 .comment {
+  font-size: 12px;
+  line-height: 1.33 ;
   max-width: 360px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
